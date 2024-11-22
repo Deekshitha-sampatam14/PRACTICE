@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Checker</title>
+    <style>
+        body {
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+        .main-title {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        label {
+            margin: 10px 0 5px;
+            width: 100%;
+            font-weight: bold;
+            color: #333;
+            text-align: left;
+        }
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 150px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .details {
+            display: none;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 200px; /* Reduced to half of its original width */
+            max-height: 150px; /* Added height reduction */
+            overflow-y: auto; /* Ensures content is scrollable if it overflows */
+        }
+        .info-title {
+            text-align: center;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        .info-data {
+            margin: 8px 0;
+            padding: 10px;
+            background-color: #e3f2fd;
+            border-radius: 5px;
+            color: #333;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="main-title">Air Quality Checker</h2>
+        <form id="form">
+            <label for="latitude">Latitude</label>
+            <input type="text" placeholder="Enter Latitude" id="latitude">
+            <label for="longitude">Longitude</label>
+            <input type="text" placeholder="Enter Longitude" id="longitude">
+            <button id="btn">Submit</button>
+        </form>
+
+        <div class="details">
+            <h2 class="info-title">AIR QUALITY</h2>
+            <p class="info-data">AQI:</p>
+            <p class="info-data">CO:</p>
+            <p class="info-data">NO2:</p>
+            <p class="info-data">O3:</p>
+            <p class="info-data">PM2.5:</p>
+            <p class="info-data">PM10:</p>
+            <p class="info-data">SO2:</p>
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
